@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Youth Sports App · Go-to-Market Lab</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🏀</text></svg>">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Go-to-Market Lab <span class="sub">Youth Sports Coaching App</span></h1>
+    <p class="desc">90-day strategy · AI agent architecture · ASO framework · Competitor map · Handoff plan</p>
+  </div>
+</header>
+<nav id="tabs">
+  <div class="wrap">
+    <a href="#overview" class="tab active"><span class="tn">1</span> Overview</a>
+    <a href="#competitors" class="tab"><span class="tn">2</span> Competitors</a>
+    <a href="#aso" class="tab"><span class="tn">3</span> ASO</a>
+    <a href="#agents" class="tab"><span class="tn">4</span> AI Agents</a>
+    <a href="#plan" class="tab"><span class="tn">5</span> 90-Day Plan</a>
+    <a href="#model" class="tab"><span class="tn">6</span> Model</a>
+    <a href="#metrics" class="tab"><span class="tn">7</span> Metrics</a>
+    <a href="#tests" class="tab"><span class="tn">8</span> Tests</a>
+  </div>
+</nav>
+<main class="wrap">
+
+<!-- TAB 1: OVERVIEW -->
+<section id="overview" class="panel">
+  <h2>Strategy Overview</h2>
+  <div class="card-row">
+    <div class="card">
+      <div class="card-num">$2.1B</div>
+      <div class="card-label">Global youth sports tech market (2025)</div>
+    </div>
+    <div class="card">
+      <div class="card-num">13.2%</div>
+      <div class="card-label">CAGR through 2034</div>
+    </div>
+    <div class="card">
+      <div class="card-num">70%</div>
+      <div class="card-label">App Store visitors use search to find apps</div>
+    </div>
+    <div class="card">
+      <div class="card-num">78%</div>
+      <div class="card-label">Coaches use smartphone apps for team management</div>
+    </div>
+  </div>
+
+  <h3>The Constraint</h3>
+  <div class="alert">
+    <strong>COPPA + Kids Category:</strong> If your app is in Apple's Kids Category or collects data from children under 13 (roster names, photos), Apple's guidelines (§1.3, §5.1.4) prohibit third-party ad SDKs and most analytics. This means standard paid-acquisition attribution breaks. Your marketing strategy must be built around organic channels from day one — which is exactly what you asked for, but the constraint is structural, not just a budget choice.
+  </div>
+
+  <h3>Positioning</h3>
+  <p>Your competitors fall into two buckets:</p>
+  <ul>
+    <li><strong>Big platforms</strong> (TeamSnap, SportsEngine, GameChanger) — backed by DICK'S Sporting Goods or NBC, millions of users, feature-heavy, premium pricing</li>
+    <li><strong>Free disruptors</strong> (Spond, Heja, TeamLinkt) — lean teams, word-of-mouth growth, free or ad-supported, strong community engagement</li>
+  </ul>
+  <p>As a founder-led app competing on a small budget, you're in the second bucket. The playbook: <strong>own a niche, grow by community, and use AI to operate at 10× the content velocity of a 2-person team.</strong></p>
+
+  <h3>Three Phases</h3>
+  <div class="phase-row">
+    <div class="phase"><strong>Weeks 1–4: Foundation</strong><br>ASO overhaul, brand voice, agent architecture built</div>
+    <div class="phase"><strong>Weeks 5–8: Launch &amp; Learn</strong><br>Content live, community outreach, first webinar, A/B tests running</div>
+    <div class="phase"><strong>Weeks 9–13: Scale &amp; Handoff</strong><br>Agents tuned, documentation complete, founder runs it solo at ≤4 hrs/week</div>
+  </div>
+</section>
+
+<!-- TAB 2: COMPETITORS -->
+<section id="competitors" class="panel" hidden>
+  <h2>Competitive Landscape</h2>
+  <p>Five platforms shape the US youth sports app market. All data verified from public sources.</p>
+  <div id="comp-grid"></div>
+</section>
+
+<!-- TAB 3: ASO -->
+<section id="aso" class="panel" hidden>
+  <h2>App Store Optimization Framework</h2>
+
+  <div class="split">
+    <div class="split-col">
+      <h3>iOS App Store</h3>
+      <table class="data-table">
+        <tr><th>Element</th><th>Limit</th><th>Weight</th></tr>
+        <tr><td>Title</td><td>30 chars</td><td>🔴 Highest</td></tr>
+        <tr><td>Subtitle</td><td>30 chars</td><td>🔴 High</td></tr>
+        <tr><td>Keyword field</td><td>100 chars</td><td>🟡 Medium</td></tr>
+        <tr><td>Promotional text</td><td>170 chars</td><td>🟢 Not indexed</td></tr>
+        <tr><td>Screenshots</td><td>10 per locale</td><td>🔴 Conversion</td></tr>
+        <tr><td>AI tags (iOS 26+)</td><td>Auto-generated</td><td>🟡 New signal</td></tr>
+      </table>
+      <p class="note">iOS indexes title, subtitle, keyword field, and now AI-extracted screenshot text. <strong>Seasonal subtitle rotation</strong> is how CBS Sports and TeamSnap stay relevant year-round.</p>
+    </div>
+    <div class="split-col">
+      <h3>Google Play</h3>
+      <table class="data-table">
+        <tr><th>Element</th><th>Limit</th><th>Weight</th></tr>
+        <tr><td>Title</td><td>30 chars</td><td>🔴 Highest</td></tr>
+        <tr><td>Short description</td><td>80 chars</td><td>🟡 Medium</td></tr>
+        <tr><td>Long description</td><td>4,000 chars</td><td>🔴 High (full-text indexed)</td></tr>
+        <tr><td>Store Listing Experiments</td><td>Built-in A/B</td><td>🔴 Conversion</td></tr>
+        <tr><td>Android Vitals</td><td>Crash/ANR rate</td><td>🔴 Ranking penalty</td></tr>
+      </table>
+      <p class="note">Google Play reads the <strong>entire long description</strong>, making it closer to SEO. Keyword density matters. Android Vitals (crash rate, ANR) can suppress rankings for unstable apps.</p>
+    </div>
+  </div>
+
+  <h3>Keyword Strategy Starter</h3>
+  <div class="keyword-grid">
+    <div class="kw-cat">
+      <h4>Head terms (high volume, high competition)</h4>
+      <div class="kw-list">
+        <span class="kw">youth sports app</span>
+        <span class="kw">team management app</span>
+        <span class="kw">sports coaching app</span>
+        <span class="kw">team schedule app</span>
+      </div>
+    </div>
+    <div class="kw-cat">
+      <h4>Long-tail (lower volume, winnable)</h4>
+      <div class="kw-list">
+        <span class="kw">volunteer coach app</span>
+        <span class="kw">youth basketball drills</span>
+        <span class="kw">soccer practice planner</span>
+        <span class="kw">little league schedule</span>
+        <span class="kw">team parent communication</span>
+        <span class="kw">youth football roster</span>
+      </div>
+    </div>
+    <div class="kw-cat">
+      <h4>Seasonal rotation (change subtitle quarterly)</h4>
+      <div class="kw-list">
+        <span class="kw season">Fall: football, soccer, cross-country</span>
+        <span class="kw season">Winter: basketball, wrestling, swim</span>
+        <span class="kw season">Spring: baseball, softball, lacrosse, track</span>
+        <span class="kw season">Summer: camps, travel ball, all-stars</span>
+      </div>
+    </div>
+  </div>
+
+  <h3>Screenshot Best Practices</h3>
+  <ol>
+    <li><strong>First 3 frames</strong> visible without scrolling — they decide the install</li>
+    <li>Callout text at the top of each frame (iOS 26 AI now reads this text for ranking)</li>
+    <li>Show the app solving a real problem: "One tap to check who's coming to practice"</li>
+    <li>Rotate seasonally alongside subtitle changes</li>
+    <li>Test with Store Listing Experiments on Google Play (no app update needed)</li>
+  </ol>
+</section>
+
+<!-- TAB 4: AI AGENTS -->
+<section id="agents" class="panel" hidden>
+  <h2>AI Agent Architecture</h2>
+  <p>Six agents, one coordinator. Every output goes through a human approval gate before publishing. The 4-hour/week founder budget is the design constraint.</p>
+
+  <div class="agent-diagram">
+    <div class="agent-hub">
+      <div class="agent-box coordinator">
+        <div class="agent-icon">🎯</div>
+        <strong>Lead Coordinator</strong>
+        <span>Claude + Make</span>
+      </div>
+    </div>
+    <div class="agent-spokes">
+      <div class="agent-box"><div class="agent-icon">🔍</div><strong>Research</strong><span>Claude + Apify</span></div>
+      <div class="agent-box"><div class="agent-icon">✍️</div><strong>Content</strong><span>Claude + Zapier</span></div>
+      <div class="agent-box"><div class="agent-icon">📱</div><strong>ASO</strong><span>Claude + ASC API</span></div>
+      <div class="agent-box"><div class="agent-icon">📤</div><strong>Distribution</strong><span>Make + Buffer</span></div>
+      <div class="agent-box"><div class="agent-icon">📊</div><strong>Analytics</strong><span>Claude + Sheets</span></div>
+    </div>
+  </div>
+
+  <h3>How the Approval Gate Works</h3>
+  <div class="flow-steps">
+    <div class="flow-step"><span class="step-n">1</span> Agent produces draft (blog post, metadata update, email)</div>
+    <div class="flow-step"><span class="step-n">2</span> Coordinator routes to approval queue (Slack channel or Notion board)</div>
+    <div class="flow-step"><span class="step-n">3</span> Founder reviews: approve, edit, or reject (target: ≤20 min/day)</div>
+    <div class="flow-step"><span class="step-n">4</span> Approved items flow to Distribution agent for scheduling</div>
+    <div class="flow-step"><span class="step-n">5</span> Analytics agent tracks performance, feeds back to Research agent</div>
+  </div>
+
+  <h3>Agent Detail</h3>
+  <div id="agent-cards"></div>
+
+  <h3>Estimated Monthly Cost</h3>
+  <table class="data-table">
+    <tr><th>Service</th><th>Tier</th><th>Monthly</th></tr>
+    <tr><td>Claude API (Sonnet)</td><td>~500K tokens/week</td><td>~$15</td></tr>
+    <tr><td>Make.com</td><td>Core (10K ops)</td><td>$10.59</td></tr>
+    <tr><td>Zapier</td><td>Starter (750 tasks)</td><td>$19.99</td></tr>
+    <tr><td>Buffer</td><td>Free (3 channels)</td><td>$0</td></tr>
+    <tr><td>SendGrid</td><td>Free (100 emails/day)</td><td>$0</td></tr>
+    <tr><td>Apify</td><td>Free tier (scraping)</td><td>$0</td></tr>
+    <tr><th colspan="2">Total agent infrastructure</th><th>~$46/mo</th></tr>
+  </table>
+</section>
+
+<!-- TAB 5: 90-DAY PLAN -->
+<section id="plan" class="panel" hidden>
+  <h2>90-Day Plan</h2>
+  <div class="plan-legend">
+    <span class="legend-item foundation">Foundation (Wk 1–4)</span>
+    <span class="legend-item launch">Launch (Wk 5–8)</span>
+    <span class="legend-item handoff">Handoff (Wk 9–13)</span>
+  </div>
+  <div id="plan-gantt"></div>
+</section>
+
+<!-- TAB 6: MODEL -->
+<section id="model" class="panel" hidden>
+  <h2>Acquisition Model</h2>
+  <p>Adjust the sliders to see how different assumptions change the 90-day install forecast. All channels are organic — zero ad spend.</p>
+  <div id="model-controls"></div>
+  <div id="model-output"></div>
+</section>
+
+<!-- TAB 7: METRICS -->
+<section id="metrics" class="panel" hidden>
+  <h2>Success Metrics</h2>
+  <p>KPIs tracked weekly by the Analytics agent. The founder reviews these in the Monday morning report (~15 min).</p>
+  <div id="metrics-table"></div>
+</section>
+
+<!-- TAB 8: TESTS -->
+<section id="tests" class="panel" hidden>
+  <h2>Test Results</h2>
+  <div id="test-results"></div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Built for a proposal · Not affiliated with any competitor mentioned · Data sourced and verified November 2026
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

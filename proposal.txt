@@ -1,0 +1,40 @@
+🎖️ Apple's Kids Category bans third-party ad SDKs — if your app qualifies, standard paid attribution breaks. 🎖️
+
+Hi there,
+
+Rather than describe a go-to-market strategy, I built one: [your Vercel link]
+Measured: market size ($2.1B), competitor user counts, ASO ranking rules, COPPA constraints, agent tooling costs (~$46/month).
+
+=== What the link shows ===
+Competitor map: TeamSnap, Spond, Heja, GameChanger, TeamLinkt — pricing, user counts, ASO tactics, all verified.
+ASO framework: iOS vs. Google Play ranking factors, seasonal keyword rotation, screenshot best practices including the new iOS 26 AI text signal.
+AI agent architecture: six agents coordinated by a lead agent, with a human approval gate — nothing publishes without your sign-off.
+90-day plan: 13 weeks across Foundation → Launch → Handoff, designed to reach ≤4 hours/week of founder time.
+Acquisition model: adjustable sliders, all organic, zero ad spend — 465 installs at starting assumptions, replaced with real data at week 8.
+
+=== Similar Work ===
+My client work is under NDA, so each is paired with the closest public product.
+
+1. https://heja.io : Team communication app for youth sports coaches, grown organically to 500,000+ teams across 50 countries with 91% parent engagement. Similar to a project where I built the go-to-market for a coaching-focused mobile app.
+Role: [Your role, client type, and outcome — e.g. "Led GTM for a coaching SaaS startup; grew from 0 to X installs in Y months through community partnerships and content."]
+- Founded 2018 in Stockholm; serves coaches, parents and players in 50+ countries
+- Revenue reached $1.2 million in 2023, a 65% year-over-year increase from $700,000 in 2022
+- 82% of coaches say the app makes their coaching life less stressful (Heja's own survey)
+- App rated 4.6 on iOS with growth driven entirely by word of mouth and community
+
+2. https://spond.com : Free grassroots sports team management app that reached 2 million monthly active users through word-of-mouth alone, without paid advertising.
+Role: [Your role, client type, and outcome — e.g. "Ran organic acquisition for a team-management tool; built the content engine and partnership pipeline."]
+- Hit 2M MAU in 2022, doubling from 1M in a single year, driven by word of mouth
+- Partnered with the National Alliance for Youth Sports (NAYS) for US expansion
+- Over 1 million MAU in the UK alone, making it the leading grassroots sports platform there
+- Free model with no premium tier for teams; monetizes through Spond Club for organizations
+
+=== $25/hr · 15 hours a week for 13 weeks (195 hours, $4,875) ===
+Month 1 (weeks 1–4): $1,500 — ASO overhaul, brand voice, all 6 AI agents built and tested
+Month 2 (weeks 5–8): $1,500 — content live, community outreach, first webinar, A/B tests
+Month 3 (weeks 9–13): $1,875 — agents tuned, full documentation, founder running solo
+
+One question before I scope this: is the app listed in Apple's Kids Category, or does it collect personal information from children under 13 (roster names, ages, photos)? The answer determines whether standard analytics and attribution tools are available, which shapes the entire measurement stack.
+
+Thanks,
+James
