@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+@page{size:letter;margin:0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#1a1a2e;font-size:11px;line-height:1.5}
+.page{width:8.5in;height:11in;padding:.7in .8in;position:relative;page-break-after:always;overflow:hidden}
+.page:last-child{page-break-after:avoid}
+
+/* Header */
+.header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid #e85d26;padding-bottom:10px;margin-bottom:18px}
+.header h1{font-size:18px;color:#1a3a5c;letter-spacing:-.02em}
+.header .sub{font-size:10px;color:#666;margin-top:2px}
+.header .tag{background:#e85d26;color:#fff;padding:3px 12px;border-radius:12px;font-size:9px;font-weight:700;letter-spacing:.03em}
+
+h2{font-size:13px;color:#e85d26;font-weight:700;margin:16px 0 8px;text-transform:uppercase;letter-spacing:.05em}
+h3{font-size:11.5px;color:#1a3a5c;font-weight:700;margin:12px 0 6px}
+p{margin-bottom:8px;color:#333}
+ul{margin:0 0 10px 16px;color:#333}
+li{margin-bottom:3px}
+
+/* Stats row */
+.stats{display:flex;gap:12px;margin:12px 0}
+.stat{flex:1;background:#f7f5f2;border-radius:6px;padding:10px;text-align:center}
+.stat-num{font-size:20px;font-weight:800;color:#e85d26}
+.stat-label{font-size:8px;color:#666;margin-top:2px;text-transform:uppercase;letter-spacing:.03em}
+
+/* Two-column */
+.cols{display:flex;gap:20px;margin:10px 0}
+.col{flex:1}
+
+/* Table */
+table{width:100%;border-collapse:collapse;font-size:10px;margin:8px 0}
+th{background:#1a3a5c;color:#fff;padding:5px 8px;text-align:left;font-weight:600}
+td{padding:5px 8px;border-bottom:1px solid #e8e5e0}
+
+/* Alert box */
+.alert{background:#fff8f0;border-left:3px solid #e85d26;padding:8px 12px;margin:10px 0;font-size:10px;border-radius:0 4px 4px 0}
+
+/* Phase blocks */
+.phases{display:flex;gap:8px;margin:10px 0}
+.phase{flex:1;border-radius:6px;padding:10px;font-size:9.5px}
+.phase.f1{background:#e0ecf8;border:1px solid #b0c8e8}
+.phase.f2{background:#fef0e8;border:1px solid #f0c8a8}
+.phase.f3{background:#e8f4e8;border:1px solid #b0d8b0}
+.phase strong{display:block;font-size:10px;margin-bottom:3px}
+
+/* Agent diagram */
+.agents-mini{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.ag{background:#f7f5f2;border:1px solid #e0ddd8;border-radius:6px;padding:6px 10px;font-size:9px;text-align:center;flex:1;min-width:90px}
+.ag strong{display:block;font-size:9.5px;color:#1a3a5c}
+.ag span{color:#888}
+
+/* Bar chart */
+.bar-row{display:flex;align-items:center;gap:8px;margin:4px 0;font-size:9.5px}
+.bar-label{width:70px;text-align:right;color:#666}
+.bar-track{flex:1;height:16px;background:#f0ede8;border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px}
+
+/* Footer */
+.footer{position:absolute;bottom:.5in;left:.8in;right:.8in;font-size:8px;color:#999;border-top:1px solid #e0ddd8;padding-top:6px;display:flex;justify-content:space-between}
+
+/* Measured */
+.measured{margin:10px 0}
+.measured dt{font-weight:700;font-size:10px;color:#1a3a5c}
+.measured dd{font-size:9.5px;color:#666;margin:0 0 6px 12px}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <div class="header">
+    <div>
+      <h1>Youth Sports App · Go-to-Market Lab</h1>
+      <div class="sub">90-day strategy · AI agent architecture · ASO framework · Organic-first acquisition</div>
+    </div>
+    <div class="tag">PROPOSAL ASSET</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-num">$2.1B</div><div class="stat-label">Global Market (2025)</div></div>
+    <div class="stat"><div class="stat-num">465</div><div class="stat-label">Projected 90-day installs</div></div>
+    <div class="stat"><div class="stat-num">$0</div><div class="stat-label">Ad spend required</div></div>
+    <div class="stat"><div class="stat-num">~$46</div><div class="stat-label">Monthly agent cost</div></div>
+  </div>
+
+  <div class="alert">
+    <strong>Key constraint:</strong> Apple's Kids Category guidelines (§1.3, §5.1.4) and COPPA restrict third-party ad SDKs and analytics for apps involving children's data. Your marketing strategy is organic by design, not just by budget.
+  </div>
+
+  <h2>Competitive Landscape</h2>
+  <table>
+    <tr><th>App</th><th>Type</th><th>Users</th><th>Pricing</th><th>Growth Model</th></tr>
+    <tr><td>TeamSnap</td><td>Incumbent</td><td>#1 in US</td><td>Free + $70–130/season</td><td>Brand + paid</td></tr>
+    <tr><td>Spond</td><td>Free disruptor</td><td>2M+ MAU</td><td>Free</td><td>Word of mouth</td></tr>
+    <tr><td>Heja</td><td>Community-first</td><td>500K+ teams</td><td>Free + Pro IAP</td><td>Organic</td></tr>
+    <tr><td>GameChanger</td><td>Stats/scoring</td><td>800K+ reviews</td><td>Free + subscription</td><td>DICK'S ownership</td></tr>
+    <tr><td>TeamLinkt</td><td>Free (ads)</td><td>500K+ MAU</td><td>Free (ad-supported)</td><td>83% direct traffic</td></tr>
+  </table>
+
+  <h2>Three-Phase Plan</h2>
+  <div class="phases">
+    <div class="phase f1"><strong>Weeks 1–4: Foundation</strong>ASO overhaul · Brand voice · All 6 AI agents built and tested · Content calendar drafted</div>
+    <div class="phase f2"><strong>Weeks 5–8: Launch & Learn</strong>Listings live · Blog + social active · Community outreach (40 leagues) · First webinar · A/B tests running</div>
+    <div class="phase f3"><strong>Weeks 9–13: Scale & Handoff</strong>Agents tuned · Full documentation · Founder running solo at ≤4 hrs/week · 6-month roadmap delivered</div>
+  </div>
+
+  <h2>AI Agent Architecture</h2>
+  <div class="agents-mini">
+    <div class="ag" style="border-color:#e85d26;background:#fff8f0"><strong>🎯 Coordinator</strong><span>Claude + Make</span></div>
+    <div class="ag"><strong>🔍 Research</strong><span>Claude + Apify</span></div>
+    <div class="ag"><strong>✍️ Content</strong><span>Claude + Zapier</span></div>
+    <div class="ag"><strong>📱 ASO</strong><span>Claude + ASC API</span></div>
+    <div class="ag"><strong>📤 Distribution</strong><span>Make + Buffer</span></div>
+    <div class="ag"><strong>📊 Analytics</strong><span>Claude + Sheets</span></div>
+  </div>
+  <p style="font-size:9.5px;color:#666">Every output passes through a human approval gate. Estimated founder review time: ≤20 min/day. Total agent infrastructure: ~$46/month.</p>
+
+  <div class="footer">
+    <span>Youth Sports App · Go-to-Market Lab</span>
+    <span>Page 1 of 2</span>
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <div class="header">
+    <div>
+      <h1>Youth Sports App · Go-to-Market Lab</h1>
+      <div class="sub">Acquisition model · ASO framework · Success metrics · Measured vs. not measured</div>
+    </div>
+    <div class="tag">PAGE 2</div>
+  </div>
+
+  <h2>Acquisition Model (90 Days)</h2>
+  <div class="bar-row"><span class="bar-label">ASO</span><div class="bar-track"><div class="bar-fill" style="width:56%;background:#1a3a5c"></div></div><strong>262</strong></div>
+  <div class="bar-row"><span class="bar-label">Content</span><div class="bar-track"><div class="bar-fill" style="width:7%;background:#e85d26"></div></div><strong>31</strong></div>
+  <div class="bar-row"><span class="bar-label">Community</span><div class="bar-track"><div class="bar-fill" style="width:27%;background:#2e8b57"></div></div><strong>135</strong></div>
+  <div class="bar-row"><span class="bar-label">Webinars</span><div class="bar-track"><div class="bar-fill" style="width:4%;background:#8b5cf6"></div></div><strong>18</strong></div>
+  <div class="bar-row"><span class="bar-label">Referrals</span><div class="bar-track"><div class="bar-fill" style="width:4%;background:#e0a030"></div></div><strong>19</strong></div>
+  <p style="font-size:10px;color:#666;margin-top:6px"><strong style="color:#e85d26">Total: 465 installs</strong> · $0 ad spend · 195 contractor hours · 39 content pieces · 6 league partnerships · 36 webinar attendees</p>
+
+  <h2>ASO Quick Reference</h2>
+  <div class="cols">
+    <div class="col">
+      <h3>iOS App Store</h3>
+      <ul>
+        <li>Title (30 chars) — highest ranking weight</li>
+        <li>Subtitle (30 chars) — rotate seasonally</li>
+        <li>100-char keyword field — comma-separated, no spaces</li>
+        <li>iOS 26: AI reads screenshot text for ranking</li>
+        <li>Seasonal rotation: football→basketball→baseball→camps</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Google Play</h3>
+      <ul>
+        <li>Title (30 chars) — highest ranking weight</li>
+        <li>Long description (4K chars) — fully indexed like SEO</li>
+        <li>Store Listing Experiments — native A/B testing</li>
+        <li>Android Vitals (crash/ANR) suppress unstable apps</li>
+        <li>Review volume + velocity matters for ranking</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Success Metrics</h2>
+  <table>
+    <tr><th>KPI</th><th>Target (Day 90)</th><th>Source</th></tr>
+    <tr><td>App Store Impressions</td><td>300+/day</td><td>App Store Connect</td></tr>
+    <tr><td>Product Page Conversion</td><td>30%+</td><td>App Store Connect</td></tr>
+    <tr><td>Weekly Installs</td><td>50+/week by week 8</td><td>App Store Connect</td></tr>
+    <tr><td>Keyword Rankings (top 10)</td><td>5+ keywords</td><td>ASO tool</td></tr>
+    <tr><td>Blog Traffic</td><td>500 visits/week</td><td>Analytics</td></tr>
+    <tr><td>Content Approval Rate</td><td>80%+ first-pass</td><td>Agent logs</td></tr>
+    <tr><td>League Partnerships</td><td>6+ active</td><td>CRM</td></tr>
+    <tr><td>App Store Rating</td><td>4.6+ with 30+ new</td><td>App Store</td></tr>
+    <tr><td>Founder Weekly Time</td><td>≤4 hours/week</td><td>Time tracking</td></tr>
+    <tr><td>Agent Uptime</td><td>95%+</td><td>Make/Zapier logs</td></tr>
+  </table>
+
+  <h2>Measured vs. Not Measured</h2>
+  <dl class="measured">
+    <dt>✓ Measured (public sources)</dt>
+    <dd>Market size ($2.1B, CAGR 13.2%) · Competitor user counts and pricing · ASO ranking factors and character limits · COPPA/Kids Category rules · AI agent tooling costs (~$46/mo)</dd>
+    <dt>✗ Not measured (model assumptions)</dt>
+    <dd>All conversion rates in the funnel model · League partnership response rates · Webinar attendance · Referral rates · These are starting assumptions, replaced with real data at the week-8 checkpoint</dd>
+  </dl>
+
+  <p style="font-size:9px;color:#999;margin-top:10px"><strong>Interactive version:</strong> [your Vercel link] — adjustable model, 13-week task breakdown, competitor details, keyword strategy</p>
+
+  <div class="footer">
+    <span>Youth Sports App · Go-to-Market Lab</span>
+    <span>Page 2 of 2</span>
+  </div>
+</div>
+
+</body>
+</html>

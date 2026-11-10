@@ -1,0 +1,10 @@
+{
+  "name": "youth-sports-gtm-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "npx serve site -l 8323",
+    "test": "node test/run.js"
+  }
+}
